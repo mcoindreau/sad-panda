@@ -1,0 +1,5 @@
+# Created by .ignore support plugin (hsz.mobi)
+#This will ignore the .DS_Store file anywhere in your file system
+**/.DS_Store
+.idea
+*.iml
