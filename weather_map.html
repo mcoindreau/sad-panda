@@ -7,23 +7,26 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/weather_map.css">
 </head>
 <body>
-<h3>Hi Tomas</h3>
-<div class="row" style="background-color: #ABBCFC">
-    <h2>Weather Application</h2>
+<div>
+    <h3>Weather Application</h3>
     <h3>San Antonio</h3>
     <table id="weather" class="table table-bordered">
-        <thead class="thead-default">
+        <thead>
             <tr>
                 <th>Day 1</th>
                 <th>Day 2</th>
                 <th>Day 3</th>
-                <tbody id="weatherInfo">
-                <!--Ajax generated content-->
-                </tbody>
             </tr>
         </thead>
+        <tbody id="weatherInfo">
+            <tr>
+                <!--Ajax generated content-->
+            </tr>
+
+        </tbody>
     </table>
 </div>
 <script

@@ -1,0 +1,17 @@
+body{
+    margin-top: 50px;
+}
+
+div {
+    background-color: #abdcfc;
+}
+h3{
+    text-align: center;
+}
+
+thead{
+    background-color: #F2F2F2;
+}
+tbody{
+    background-color: #F2F2F2;
+}

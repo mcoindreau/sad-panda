@@ -19,12 +19,12 @@
 
         }
 
-        for (var i = 0; i < data.length; i++) {
+        for (var i = 0; i < data.list.length; i++) {
 
-
+            var icon = data.list[i].weather[0].icon;
             var url = "http://openweathermap.org/img/w/" + icon + ".png"
             var img = "<img src='" + url + "'>"
-            var p3 = '<p>' + "Humidity: " + data.list.main[i].humidity + '</p>';
+            var p3 = '<p>' + "Humidity: " + data.list[i].main.humidity + '</p>';
 
             $('#weatherInfo').append(img + p3);
 
