@@ -8,6 +8,7 @@
     $.get("http://api.openweathermap.org/data/2.5/forecast", {
         APPID: "564d2b6aa6acb71fd8eba66aca7aff6a",
         q:     "San Antonio, TX",
+        units: "imperial",
         cnt: 3
     }).done(function(data) {
         console.log(data);
@@ -18,15 +19,16 @@
             console.log(valNum);
 
         }
-
+// test
         for (var i = 0; i < data.list.length; i++) {
 
+            var h2 = "<h2>" + Math.round(data.list[i].main.temp) + " ºF" + "</h2>";
             var icon = data.list[i].weather[0].icon;
             var url = "http://openweathermap.org/img/w/" + icon + ".png"
             var img = "<img src='" + url + "'>"
             var p3 = '<p>' + "Humidity: " + data.list[i].main.humidity + '</p>';
 
-            $('#weatherInfo').append(img + p3);
+            $('#weatherInfo').append(h2 + img + p3);
 
 
             //forecast broke it
