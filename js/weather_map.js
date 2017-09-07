@@ -22,13 +22,16 @@
 // test
         for (var i = 0; i < data.list.length; i++) {
 
-            var h2 = "<h2>" + Math.round(data.list[i].main.temp) + " ºF" + "</h2>";
+            var h2 = "<h2>" + Math.round(data.list[i].main.temp) + "º" + "/" + Math.round(data.list[i].main.temp_min) + "º" + "</h2>";
             var icon = data.list[i].weather[0].icon;
             var url = "http://openweathermap.org/img/w/" + icon + ".png"
             var img = "<img src='" + url + "'>"
-            var p3 = '<p>' + "Humidity: " + data.list[i].main.humidity + '</p>';
+            var p3 = '<p>' + "Humidity: " + data.list[i].main.humidity + "%" +'</p>';
+            var p4 = '<p>' + "Pressure:" + data.list[i].main.pressure + "Pa" +'</p>';
+            var p5 = '<p>' + "Wind Speed" + data.list[i].wind.speed + "MPH" + '</p>';
+            var p6 = '<p>' + data.list[i].weather[0].main + ": " + data.list[i].weather[0].description + '</p>';
 
-            $('#weatherInfo').append(h2 + img + p3);
+            $('#weatherInfo').append(h2 + img + p3 + p4 + p5 + p6);
 
 
             //forecast broke it
