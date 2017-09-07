@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/weather_map.css">
 </head>
 <body>
-<div>
+<div id="temp">
     <h3>Weather Application</h3>
     <h3>San Antonio</h3>
     <table id="weather" class="table table-bordered">
@@ -24,12 +24,21 @@
         </thead>
         <tbody>
             <tr id="weatherInfo">
-                <!--<td ></td>&lt;!&ndash;Ajax generated content&ndash;&gt;-->
+                <!--Ajax generated content-->
             </tr>
-
         </tbody>
     </table>
 </div>
+<div id="coordinates">
+    <input id="lat" type="text" value="" placeholder="Latitude">
+    <input id="long" type="text" value="" placeholder="Longitude">
+    <button value="Submit" class="btn btn-default">Submit</button>
+</div>
+<div id="map-canvas">
+    <!--Load Google Maps and key-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjr6kKRZwKg7wd2NSWrLOW_ls5ZiLlJOw"></script>
+</div>
+
 <script
         src="http://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
