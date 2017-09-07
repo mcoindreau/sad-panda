@@ -73,9 +73,15 @@
     // Render map
     var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
+    // Create lat and long for our marker position
+    var picnik = { lat: 29.571711, lng: -98.597039};
+    29.571745
 
-
-
+    //Add the marker to our existing map
+    var marker = new google.maps.Marker({
+        position: picnik,
+        map: map
+    });
     //map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
 
 
