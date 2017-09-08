@@ -14,7 +14,7 @@
 <div id="temp">
     <div class="jumbotron">
         <h2><strong>Weather Application</strong></h2>
-        <h3>San Antonio</h3>
+        <h3 class="city">San Antonio</h3>
     </div>
     <table id="weather" class="table table-bordered">
         <thead>
@@ -22,7 +22,6 @@
                 <th>Day 1</th>
                 <th>Day 2</th>
                 <th>Day 3</th>
-                <!--test-->
             </tr>
         </thead>
         <tbody>
@@ -35,7 +34,11 @@
 <div id="coordinates">
     <input id="lat" type="text" value="" placeholder="Latitude">
     <input id="long" type="text" value="" placeholder="Longitude">
-    <button value="Submit" class="btn btn-default">Change Location</button>
+    <button id="lat-long" value="Submit" class="btn btn-default">Change Location</button>
+</div>
+<div>
+    <p>51.5074° S, 0.1278° E Lon</p>
+    <p>48.8566° N, 2.3522° E Par</p>
 </div>
 <div id="map-canvas">
     <!--Load Google Maps and key-->
